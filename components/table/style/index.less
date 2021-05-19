@@ -246,6 +246,7 @@
   &-column-sorter {
     color: @table-header-icon-color;
     font-size: 0;
+    transition: color 0.3s;
 
     &-inner {
       display: inline-flex;
@@ -265,6 +266,10 @@
     &-up + &-down {
       margin-top: -0.3em;
     }
+  }
+
+  &-column-sorters:hover &-column-sorter {
+    color: darken(@table-header-icon-color, 10%);
   }
 
   // ============================ Filter ============================
