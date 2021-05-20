@@ -75,8 +75,9 @@ const Demo = () => {
     setAutoExpandParent(false);
   };
 
-  const onCheck = (checkedKeysValue: React.Key[]) => {
+  const onCheck = (checkedKeysValue: React.Key[], info: any) => {
     console.log('onCheck', checkedKeysValue);
+    console.log('onCheckinfo', info);
     setCheckedKeys(checkedKeysValue);
   };
 
